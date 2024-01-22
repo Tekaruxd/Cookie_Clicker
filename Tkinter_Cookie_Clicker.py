@@ -46,7 +46,7 @@ def lvlup():
         cps += 0.10
         cps = round(cps, 2)
         cps_count['text'] = f'{cps}'
-        Up_cost_counter['text'] = f'{upgrade_cost}'
+        up_cost_counter['text'] = f'{upgrade_cost}'
         ct['text'] = f'{counter}'
 
 # passive income
@@ -91,12 +91,12 @@ cps_count = tk.Label(sdf, text="0.0", font=("Arial", 18))
 cps_count.pack()
 
 # Upgrade cost - Show
-Up_cost_label = tk.Label(
+up_cost_label = tk.Label(
     sdf, text="Cookies per second Upgrade cost", font=("Arial", 18))
-Up_cost_label.pack()
+up_cost_label.pack()
 
-Up_cost_counter = tk.Label(sdf, text=upgrade_cost, font=("Arial", 18))
-Up_cost_counter.pack()
+up_cost_counter = tk.Label(sdf, text=upgrade_cost, font=("Arial", 18))
+up_cost_counter.pack()
 
 
 # Cokie per click upgrade cost
